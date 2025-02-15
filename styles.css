@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif; /* sets the font to arial, with sans-serif as a fallback */
+    font-weight: bold; /* makes all text bold */
+    margin: 0; /* removes default margin from the body */
+    display: flex; /* enables flexbox for layout */
+    flex-direction: column; /* arranges elements in a column */
+    align-items: center; /* centers elements horizontally */
+    background-color: rgb(176, 176, 176); /* sets background color to light gray */
+}
+
+h1 {
+    font-size: 3.5rem; /* sets a large font size for the heading */
+    color: black; /* sets text color to black */
+}
+
+.choices {
+    margin-bottom: 30px; /* adds space below the choices container */
+}
+
+.choices button {
+    font-size: 7.7rem; /* makes the button text very large */
+    min-width: 160px; /* ensures buttons have a minimum width */
+    margin: 0 10px; /* adds horizontal spacing between buttons */
+    border-radius: 250px; /* makes the button shape fully rounded */
+    background-color: rgb(7, 193, 196); /* sets the button color to teal */
+    cursor: pointer; /* changes cursor to pointer on hover */
+    transition: background-color 0.5s ease; /* smooth transition effect when the background color changes */
+}
+
+.choices button:hover {
+    background-color: rgb(172, 132, 232); /* changes button color to purple when hovered */
+}
+
+#playerDisplay, #computerDisplay {
+    font-size: 2.5rem; /* increases text size for player and computer choices */
+}
+
+#resultDisplay {
+    font-size: 5rem; /* makes result text large */
+    margin: 30px 0; /* adds vertical spacing around the result */
+}
+
+.scoreDisplay {
+    font-size: 2rem; /* sets a moderate text size for the score display */
+}
+
+.greenText {
+    color: green; /* styles winning results in green */
+}
+
+.redText {
+    color: rgb(148, 20, 20); /* styles losing results in dark red */
+}
+
+#resultDisplay {
+    font-size: 3rem; /* makes text bigger */
+    font-weight: bold; /* makes text bold */
+    color: red; /* changes text color to red */
+    text-transform: uppercase; /* makes text all caps */
+}
+
+@keyframes flash {
+    0% { opacity: 1; } /* fully visible */
+    50% { opacity: 0; } /* invisible at halfway point */
+    100% { opacity: 1; } /* fully visible again */
+}
+
+#resultDisplay {
+    animation: flash 0.8s infinite; /* applies a flashing effect */
+    font-size: 3rem; /* ensures consistent text size */
+    color: red; /* keeps text red */
+    text-align: center; /* centers the text */
+}
+

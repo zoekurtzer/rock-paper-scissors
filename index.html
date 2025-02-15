@@ -1,0 +1,34 @@
+<!DOCTYPE html> <!-- declares the document type as html -->
+<html lang="en"> <!-- sets the language of the document to english -->
+  <head>
+    <meta charset="UTF-8" /> <!-- defines character encoding as utf-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- ensures compatibility with internet explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- makes the page responsive on different devices -->
+    <title>Zoe Kurtzer | RPS</title> <!-- sets the title of the webpage -->
+    <link rel="stylesheet" href="styles.css" /> <!-- links the external css file -->
+  </head>
+
+  <body>
+    <h1>Rock - Paper - Scissors</h1> <!-- main heading of the game -->
+
+    <div class="choices"> <!-- container for the choice buttons -->
+        <button onclick="playGame('rock')">&#128074;</button> <!-- rock button with a fist emoji -->
+        <button onclick="playGame('paper')">&#9995;</button> <!-- paper button with an hand emoji -->
+        <button onclick="playGame('scissors')">&#9996;&#65039;</button> <!-- scissors button with the peace sign emoji -->
+    </div>
+
+    <div id="playerDisplay">PLAYER: </div> <!-- displays the player's choice -->
+    <div id="computerDisplay">COMPUTER: </div> <!-- displays the computer's choice -->
+    <div id="resultDisplay"></div> <!-- displays the result of the round -->
+
+    <div class="scoreDisplay">player score:
+        <span id="playerScoreDisplay">0</span> <!-- displays the player's score -->
+    </div>
+
+    <div class="scoreDisplay">computer score:
+        <span id="computerScoreDisplay">0</span> <!-- displays the computer's score -->
+    </div>
+
+    <script src="main.js"></script> <!-- links the external js file -->
+  </body>
+</html>
